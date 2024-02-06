@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    require_once('includes/connect_pdo.php');
+    $stmt = $connection->prepare('SELECT * FROM projects ORDER BY title ASC');
+    $stmt->execute();
+?>
+
   <head>
     <title>EA. Works</title>
     <meta charset="utf-8">
@@ -15,7 +21,7 @@
 
   <body>
 
-    <h1 class="hidden">EA. CaseStudy</h1>
+  <h1 class="hidden">EA. CaseStudy</h1>
     <div id="sticky-nav-con">
     <header class="grid-con" id="main-header">
     <nav id="main-nav" class="col-start-1 col-end-2 m-col-start-7 m-col-end-12">
@@ -38,8 +44,30 @@
 </header>
 </div>
 
+  <?php
+
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
+        echo  '<section class="project-con"><h3>'.
+                $row['title'].
+        '</h3><a href="project_detail_pdo.php?id='.
+        $row['id'].
+        '"><img class="thumbnail" src="images/'.    
+                $row['image_url'].   
+                '" alt="Project Thumbnail"></a><p>'.   
+                $row['description'].  
+                '</p></section>';
+
+        }
+
+        $stmt = null;
+
+    ?> 
+
+    
+
   
-<section id="projects" class="grid-con">
+<!-- <section id="projects" class="grid-con">
             <h2 class="hidden"></h2>
             
         <div class="project col-span-full m-col-start-1 m-col-end-7">
@@ -77,7 +105,7 @@
             <img data-project="Coffee" src="images/coffee_w.jpg" class="work" alt="member4">
             </a>
         </div>
-        </section>
+        </section> -->
     
 
      <footer id="footer-hero"> 
@@ -119,6 +147,6 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> 
   </body>
 </html>
