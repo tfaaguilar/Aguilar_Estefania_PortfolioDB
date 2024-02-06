@@ -1,0 +1,152 @@
+
+@use '../abstracts' as a;
+
+.heroimg {
+    max-width: 30%;
+}
+
+#social-media {
+    text-align: center;
+    color: a.$accent-color;
+}
+
+#social-media i {
+    font-size: 32px;
+    margin-bottom: 60px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+
+
+#player-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#atributes div {
+    height: 300px;
+    margin-bottom: 300px;
+}
+
+#atributes img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 300;
+    text-align: center;
+    color: a.$accent-color;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: a.$heading-font-family;
+}
+
+
+#options {
+    margin-top: 50px;
+}
+
+#options img {
+  border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+#options p {
+    margin-left: 40px;
+}
+
+#options a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#options a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
+#caracteristics {
+    margin-bottom: 80px;
+}
+
+#caracteristics a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 250px;
+    margin-top: 300px;
+}
+
+#caracteristics a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
+#caracteristics img {
+    margin-left: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#contact-form img {
+    max-width: 20%;
+}
+
+@media screen and (min-width: 768px) 
+
+{
+    .heroimg {
+    max-width: 30%;
+    margin-left: 800px;
+    position: absolute;
+}
+
+#hero-con a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 330px;
+}
+
+#hero-con a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
+#options a {
+    
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+#contact-form form {
+    margin-left: 750px;
+}
+
+#contact-form img {
+    position: absolute;
+    margin-top: -350px;
+    margin-left: -350px;
+}
+
+
+
+}

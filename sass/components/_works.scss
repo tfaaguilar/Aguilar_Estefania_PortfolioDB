@@ -1,0 +1,51 @@
+@use '../abstracts' as a;
+
+#projects img {
+ border-radius: 10px;
+    margin-top: 20px;
+    max-width: 80%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox { 
+    width: 60vw; 
+    height: 75vh; 
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 20%;
+    background-color: a.$secondary-color;
+    opacity: 95%;
+    z-index: 5000;
+    display: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 85%;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.lightbox_close:hover { opacity: 0.5; color: rgb(141, 119, 146); }
+
+.lightbox article {
+    width: 80%;
+    margin-left: 10%;
+    color: white;
+}
+
+.lb_text, .lb_heading { text-align: center; }
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox:target { display: block; }
+

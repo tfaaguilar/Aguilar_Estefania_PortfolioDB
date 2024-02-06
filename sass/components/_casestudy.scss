@@ -1,0 +1,31 @@
+@use '../abstracts' as a;
+
+#casestudy img {
+    border-radius: 10px;
+    margin-top: 20px;
+    max-width: 80%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.mobile img {
+    position: absolute;
+    max-width: 15%;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#process img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+#results div {
+    background-color: a.$secondary-color;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
