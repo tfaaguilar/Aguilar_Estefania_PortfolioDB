@@ -462,6 +462,13 @@ h2, h3 {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+#projects img {
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 80%;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
 .lightbox {
   width: 60vw;
   height: 75vh;
