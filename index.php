@@ -54,9 +54,7 @@
         $row['id'].
         '"><img class="thumbnail" src="images/'.    
                 $row['image_url'].   
-                '" alt="Project Thumbnail"></a><p>'.   
-                $row['description'].  
-                '</p></section>';
+                '" alt="Project Thumbnail"></a></section>';
 
         }
 
